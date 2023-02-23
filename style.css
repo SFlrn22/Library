@@ -99,4 +99,57 @@ li:hover {
     height: 50px;
 }
 
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E3F51;
+    width: 500px;
+    height: 600px;
+}
+
+.invis {
+    displaY: none;
+}
+
+label {
+    color: #ECEEFF;
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+
+input {
+    margin-bottom: 2vh;
+    font-size: 18px;
+    outline: none;
+    background-color: #505168;
+    color: #ECEEFF;
+    padding: 10px;
+}
+
+label[for="isread"] {
+    margin-top: 15px;
+}
+
+.submit {
+    margin-top: 10px;
+    font-size: 25px;
+    background-color: #505168;
+    color: #ECEEFF;
+    padding: 15px;
+    border-radius: 80px;
+}
+
+
 

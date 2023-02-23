@@ -30,9 +30,19 @@
                     <button class="delete-btn">Delete book</button>
                 </div>
             </div>
-            <div class="book-card"></div>
-            <div class="book-card"></div>
-            <div class="book-card"></div>
+        </div>
+        <div class="form-wrapper">
+            <form class="form">
+                <label for="title">Book title</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Book author</label>
+                <input type="text" id="author" name="author" required>
+                <label for="pages">Number of pages</label>
+                <input type="number" id="pages" name="pages" max="10000">
+                <label for="isread">Did you read this book?</label>
+                <input type="checkbox" id="isread" name="isread" >
+                <button class="submit">Submit</button>
+            </form>
         </div>
     </body>
 </html>
