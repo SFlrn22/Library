@@ -138,8 +138,36 @@ input {
     padding: 10px;
 }
 
-label[for="isread"] {
-    margin-top: 15px;
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+.checkbox-container h4 {
+    text-align: center;
+}
+
+.checkmark {
+    align-self: center;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(80, 81, 104, 0.8);
+  }
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: rgba(80, 81, 104, 1);
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: rgba(255, 240, 124, 1);
 }
 
 .submit {
@@ -150,6 +178,8 @@ label[for="isread"] {
     padding: 15px;
     border-radius: 80px;
 }
+
+
 
 
 
