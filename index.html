@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
         <title>Library</title>
     </head>
     <body>
@@ -13,7 +13,7 @@
             <nav>
                 <h1>Library</h1>
                 <ul>
-                    <li>Add book</li>
+                    <li id="addb">Add book</li>
                     <li>Remove all</li>
                 </ul>
             </nav>
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="form-wrapper">
+        <div class="form-wrapper" id="form-wrap">
             <form class="form">
                 <label for="title">Book title</label>
                 <input type="text" id="title" name="title" required>
@@ -44,8 +44,10 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                
-                <button class="submit">Submit</button>
+                <div class="buttons">
+                    <button class="submit">Submit</button>
+                    <button type="button" class="cancel" id='cancel'>Cancel</button>
+                </div>
             </form>
         </div>
     </body>

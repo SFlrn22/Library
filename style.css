@@ -13,6 +13,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 nav {
@@ -100,7 +101,7 @@ li:hover {
 }
 
 .form-wrapper {
-    display: flex;
+    display: none;
     justify-content: center;
     position: fixed;
     top: 15vh;
@@ -170,7 +171,7 @@ input[type=checkbox] {
     background-color: rgba(255, 240, 124, 1);
 }
 
-.submit {
+.submit, .cancel {
     margin-top: 10px;
     font-size: 25px;
     background-color: #505168;
@@ -179,7 +180,7 @@ input[type=checkbox] {
     border-radius: 80px;
 }
 
-
-
-
-
+.buttons {
+    display: flex;
+    gap: 25px;
+}
