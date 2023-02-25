@@ -97,6 +97,25 @@ function updateLibrary() {
     bookCard.appendChild(bookButtons);
     library.appendChild(bookCard);
   }
+  if (libraryArr.length !== 0) {
+    const readBtn = document.querySelectorAll('#btn-read');
+    const deleteBtn = document.querySelectorAll('.delete-btn');
+    for (let i = 0; i < readBtn.length; i += 1) {
+      readBtn[i].addEventListener('click', () => {
+        if (libraryArr[i].read === true) {
+          libraryArr[i].read = false;
+          updateLibrary();
+        } else {
+          libraryArr[i].read = true;
+          updateLibrary();
+        }
+      });
+      deleteBtn[i].addEventListener('click', () => {
+        libraryArr[i].removeBook();
+        updateLibrary();
+      });
+    }
+  }
 }
 
 function removeAll() {
