@@ -47,17 +47,17 @@ li:hover {
 .library {
     background-color: rgba(92, 94, 120, 1);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     justify-items: center;
     align-items: center;
-    gap: 45px;
+    row-gap: 45px;
     padding: 45px 0;
     flex: 1 1 auto;
 }
 
 .book-card {
-    height: 350px;
-    width: 250px;
+    height: 450px;
+    width: 320px;
     background-color: rgba(255, 240, 124, 1);
     display: flex;
     flex-direction: column;
@@ -70,6 +70,17 @@ li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    word-break: break-all;
+    padding: 25px;
+}
+
+.book-info p {
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.book-info h2 {
+    font-size: 1.1vw;
 }
 
 .book-buttons {
@@ -81,9 +92,13 @@ li:hover {
 
 .read-btn {
     font-size: 25px;
-    width: 90px;
-    height: 50px;
+    width: 70px;
+    height: 40px;
     background-color: chartreuse;
+}
+
+.no {
+    background-color: crimson;
 }
 
 .noread-btn {
