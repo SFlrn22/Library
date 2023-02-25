@@ -71,16 +71,18 @@ li:hover {
     flex-direction: column;
     align-items: center;
     word-break: break-all;
-    padding: 25px;
+    padding: 20px 40px;
+    gap: 25px;
 }
 
 .book-info p {
     font-weight: bold;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
+    text-align: center;
 }
 
 .book-info h2 {
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
 
 .book-buttons {

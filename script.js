@@ -128,13 +128,15 @@ function validateForm(event) {
   const title = formTitle.value;
   const author = formAuthor.value;
   const pages = formPages.value;
-  if (formCheckbox.checked) {
-    addBook(title, author, pages, true);
-  } else {
-    addBook(title, author, pages, false);
+  if (title !== '' && author !== '' && pages !== '') {
+    if (formCheckbox.checked) {
+      addBook(title, author, pages, true);
+    } else {
+      addBook(title, author, pages, false);
+    }
+    resetForm();
+    updateLibrary();
   }
-  resetForm();
-  updateLibrary();
 }
 
 addBtn.addEventListener('click', openForm);
